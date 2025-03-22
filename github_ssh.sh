@@ -11,5 +11,6 @@ EOT
 
 echo "配置github的ssh......."
 ssh-keygen -t rsa -b 4096 -C "your email"
-cat ../.ssh/id_rsa.pub
+ssh-add $HOME/.ssh/id_rsa
+cat $HOME/.ssh/id_rsa.pub
 echo "---请将上面的公钥添加到github的ssh key中---"
