@@ -12,10 +12,11 @@ else
     echo "安装包已存在，跳过下载步骤"
 fi
 
-bash $INSTALLER -p $HOME/anaconda3
+bash $INSTALLER 
 
 # 添加环境变量
-$HOME/anaconda3/bin/conda init bash && source .bashrc
+$HOME/anaconda3/bin/conda init bash
+source .bashrc
 
 echo "Anaconda安装完成！"
 
